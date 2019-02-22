@@ -1,0 +1,14 @@
+body {
+    background: url("img/background3.png")
+}
+
+#navBar {
+    background-color: rgb(48, 46, 46);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%
+}
+
+#navHead {
+    font-size: 36px
+}

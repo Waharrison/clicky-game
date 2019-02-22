@@ -4,16 +4,11 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-dark bg-primary">
-          <div className="navbar-brand" >Clicky Game</div>
-          <form class="form-inline">
-            <button class="btn btn-outline-success" type="button">
-              Main button
-            </button>
-            <button class="btn btn-sm btn-outline-secondary" type="button">
-              Smaller button
-            </button>
-          </form>
+        <nav className="navbar" id="navBar">
+        <div className="container">
+          <div className="navbar-brand" id="navHead" >Clicky Icon Game</div>
+         <ul> <li><h2>High Score</h2></li></ul>
+          </div>
         </nav>
       </div>
     );
