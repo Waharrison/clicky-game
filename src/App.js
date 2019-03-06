@@ -65,6 +65,12 @@ class App extends Component {
     this.state.logos.sort(() => Math.random() - 0.5)
   }
 
+  winScreen = () => {
+    if (this.state.highScore === 16) {
+      alert("Way to go Jeremiah you did it!!")
+    }
+  }
+
   handleClick = checked => {
     this.state.logos.find((f, z) => {
       if (f.id === checked) {
@@ -74,12 +80,15 @@ class App extends Component {
             {score : this.state.score + 1}
             );
          this.shuffle(); 
+         
          return true;
         } else {
           this.reset();
+
         }
       }
     });
+    this.winScreen();
   };
 
   render() {
